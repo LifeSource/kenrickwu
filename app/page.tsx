@@ -1,9 +1,8 @@
 import Introduction from "@/components/Home/Introduction";
-
+import "../components/Home/home.css";
 export default function Home() {
   return (
-    <main>
-      <h1>Welcome to My Portfolio</h1>
+    <main className="home">
       <Introduction />
     </main>
   );

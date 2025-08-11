@@ -25,7 +25,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 html {
@@ -38,6 +37,7 @@ body {
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 *,
@@ -74,6 +74,12 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .container {

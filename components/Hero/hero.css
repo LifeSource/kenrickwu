@@ -1,0 +1,9 @@
+.hero {
+  height: 100dvh;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid var(--m-four);
+
+  @media (min-width: 768px) {
+    line-height: 2.5;
+  }
+}

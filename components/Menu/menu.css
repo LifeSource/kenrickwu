@@ -1,0 +1,40 @@
+.menu {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  &.active {
+    .menu__line--top {
+      transform: rotate(45deg);
+    }
+
+    .menu__line--center {
+      opacity: 0;
+    }
+
+    .menu__line--bottom {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (min-width: 1042px) {
+    display: none;
+  }
+}
+
+.menu__line {
+  z-index: 5;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  transform-origin: 6px 2px;
+}
